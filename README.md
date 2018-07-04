@@ -4,6 +4,7 @@
    * [Objective](#objective)
    * [Audience](#audience)
    * [Experience](#experience)
+   * [Nice to have](#next-version)
  * [Technical](#technical)
    * [Screens](#Screens)
    * [External services](#external-services)
@@ -36,6 +37,10 @@ People who are looking for date activity, restaurant, movie… cheap deals.
 7. Users can pay by PayPal or credit card
 8. Users can buy the same deal for limited amount of time.(based on different business)
 9. Users can share the deals to friends.
+
+#### Nice to have (V2)
+1. Users get better deal if they buy the deals from the same business
+
 [Back to top ^](#)
 
 ---
@@ -55,8 +60,10 @@ People who are looking for date activity, restaurant, movie… cheap deals.
 2. get request from out db for deals of the day ( advertised business )
 3. get request from database for deals in different categories.
 4. post request to database for deals user has saved
+4. post request to database for deals user has bought
 5. get request from database for saved deals
 6. get request from db for redeemed deals (buy again)
+
 
 #### Views, View Controllers, and other Classes
 * Views
@@ -74,6 +81,7 @@ __ Mongodb
 * email
 * password
 * savedDeals: [dealId]
+* boughtDeals: [dealId]
 
 __ Deal:
 * dealId

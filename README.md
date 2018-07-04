@@ -67,30 +67,30 @@ People who are looking for date activity, restaurant, movie… cheap deals.
 
 
 #### Data models
-Mongodb 
-User:
-userId
-username
-email
-password
-savedDeals: [dealId]
+__ Mongodb 
+* User:
+* userId
+* username
+* email
+* password
+* savedDeals: [dealId]
 
-Deal:
-dealId
-dealTitle
-dealBusinessID
-redeemed: Bool
-dealPrerequisite
-dealTimeFrame
-dealReview(if redeemed)
+__ Deal:
+* dealId
+* dealTitle
+* dealBusinessID
+* redeemed: Bool
+* dealPrerequisite
+* dealTimeFrame
+* dealReview(if redeemed)
 
-Business:
-businessId
-businessName
-businessAddress
-businessImgURL: [ImgString]
-businessReview(from yelp API)
-businessPostedDealsID: [dealID]
+__ Business:
+* businessId
+* businessName
+* businessAddress
+* businessImgURL: [ImgString]
+* businessReview(from yelp API)
+* businessPostedDealsID: [dealID]
 
 [Back to top ^](#)
 
